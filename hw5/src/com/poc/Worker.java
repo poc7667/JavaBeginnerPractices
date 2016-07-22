@@ -26,7 +26,8 @@ public class Worker {
             System.out.print(continueMsg);
             isContinue = rd.next();
             rd.nextLine();
-        } while (isContinue.compareToIgnoreCase("y") == 0);
+//        } while (isContinue.compareToIgnoreCase("y") == 0);
+        } while (false);
         System.out.println();
         System.out.println(goodByeMsg);
     }
