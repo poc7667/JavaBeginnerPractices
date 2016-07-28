@@ -19,13 +19,18 @@ public class Hw6_1 extends HomeWorkWrapper {
 
     }
 
+    public static int getUserChoice(){
+        String userInput =  rd.nextLine();
+        return Integer.parseInt(userInput);
+    }
+
     public void execute(){
         showUsage();
         while (true){
             System.out.print("Enter your choice 1~5:");
-            String userInput =  rd.nextLine();
+
             try{
-                userChoice = Integer.parseInt(userInput);
+                userChoice = getUserChoice();
                 if(isInValidRange(userChoice)){
                     break;
                 }
