@@ -10,9 +10,9 @@ public class Hw6_2 {
     private static float[] getTwoFloats(){
         Scanner rd = new Scanner(System.in);
         while (true){
-            System.out.print("Enter 2 floats divided by a space");
+            System.out.print("Enter 2 floats divided by a space: ");
             try{
-                String toks[] = rd.nextLine().split(" ");
+                String toks[] = rd.nextLine().trim().split(" ");
                 if(toks.length==2){
                     float[] rtnFloats = new float[2];
                     for(int i=0; i < 2; i++){
